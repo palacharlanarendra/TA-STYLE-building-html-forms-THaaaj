@@ -74,6 +74,10 @@ body{
     background-size: cover;
     
 }
+button a{
+    text-decoration: none;
+    color:white;
+}
 .article h1{
     font-size:65px;
     font-weight: 700;
@@ -107,6 +111,9 @@ body{
 .form-control:focus{
     border: 2px solid #918CA4;
 }
+.form-control a span{
+    font-weight:bolder;
+}
 .form-control::placeholder{
     padding-left:40px;
     color:#8E8D92;
@@ -130,17 +137,13 @@ body{
     padding:25px 0;
     border-bottom:5px solid #68BB7D;
 }
-
-button span{
-    font-weight: 700;
-    color:white;
-}
 fieldset h2{
     text-align:center;
     color:#C8C6D2;
     font-weight:700;
     font-size:16px;
 }
-fieldset span{
-    color:#E3878D;
+fieldset a{
+    text-decoration: none;
+    color:#E3878D ;
 }
