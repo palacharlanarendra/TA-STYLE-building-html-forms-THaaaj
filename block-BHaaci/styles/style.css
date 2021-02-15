@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width:1400px;
+    margin:0 auto;
+    padding:20px;
+}
+.padding-top{
+    padding-top:40px;
+}
+/*general styles*/
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.align-start{
+    align-self:stretch;
+}
+.bg-img{
+    background:url("../assets/bg-intro-desktop.png") center center no-repeat,linear-gradient(#e77478,#e77478); 
+    height:100vh;
+    background-size: cover;
+    
+}
+.article h1{
+    font-size:65px;
+    font-weight: 700;
+    color:white;
+}
+.article p{
+    font-size:20px;
+    font-weight: 500;
+    color:rgb(230, 228, 228);
+    line-height:1.5;
+}
+.flex-40{
+    flex:0 1 40%;
+}
+.flex-50{
+    flex:0 1 50%;
+}
+.form-control{
+    display:block;
+    width:100%;
+    border:0;
+    outline:none;
+    border:2px solid #E3E3E3;
+    padding:20px 0;
+    margin-bottom:30px;
+    border-radius: 6px;
+    font-size:20px;
+    color:#565559;
+    font-weight:700;
+}
+.form-control:focus{
+    border: 2px solid #918CA4;
+}
+.form-control::placeholder{
+    padding-left:40px;
+    color:#8E8D92;
+}
+.form{
+    max-width:700px;
+    padding:50px;
+    background-color:white;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #5D54A3;
+    border:2px solid #5D54A3;
+    color: #E3E3E3;
+    padding:25px 0;
+    box-shadow: 0px 6px 2px 0px #DB6566;
+}
+.btn-secondary{
+    background-color: #73CD8A;
+    color: #E3E3E3;
+    padding:25px 0;
+    border-bottom:5px solid #68BB7D;
+}
+
+button span{
+    font-weight: 700;
+    color:white;
+}
+fieldset h2{
+    text-align:center;
+    color:#C8C6D2;
+    font-weight:700;
+    font-size:16px;
+}
+fieldset span{
+    color:#E3878D;
+}
