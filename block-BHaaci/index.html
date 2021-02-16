@@ -1,0 +1,52 @@
+<!-- - Create a forms according to the layout shown below.
+
+![Building HTML forms Assignment level 1](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-1.jpg)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Signup Form | Assignment 1</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="page">
+        <div class="bg-img flex">
+            <div class="container flex">
+                <article class="article flex-40">
+                    <h1>Learn to code by watching others</h1>
+                    <p class="padding-top">
+                        See how experienced developers solve problems in real-time. 
+                        Watching scripted tutorials is great, but understanding how 
+                        developers think is invaluable.
+                    </p>
+                </article>
+                <div class="flex-50">
+                    <button class="form-control btn" >
+                        <a href="#"><span>Try it free 7 days</span> then $20/mo. thereafter</a>
+                    </button>
+                    <form class="form align-start ">
+                        
+                        <fieldset>
+                            <input class="form-control" type="name" placeholder="First Name"/>
+                            <input class="form-control" type="name" placeholder="Last Name"/>
+                            <input class="form-control" type="email" placeholder="Email Address"/>
+                            <input class="form-control" type="password" placeholder="Password"/>
+                            <input class="form-control btn-secondary" type="submit" value="CLAIM YOUR FREE TRIAL"/>
+                            <h2>By clicking the button. you are agreeing to our <span class="pink"><a href="#">Terms and Services</a></span></h2>
+                        </fieldset>
+                        
+                </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
