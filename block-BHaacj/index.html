@@ -20,16 +20,16 @@
     <header class="header">
        <div class="container">
             <div class="padding-sides flex">
-                <div class="brand-logo flex justify-content">
+                <a href="#" class="brand-logo flex justify-content">
                     <img src="./assets/images/logo.png" alt="logo"/>
                     <h2>JOURNEY</h2>
-                </div>
+                </a>
                 <nav>
                     <ul class="flex">
                         <li class="light-green"><a href="#">Home</a></li>
-                        <li><a href="#">Top Destinations</a></li>
-                        <li><a href="#">Recommended Places</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#top-destination">Top Destinations</a></li>
+                        <li><a href="#recommended-places">Recommended Places</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,21 +50,21 @@
                     <form class="form flex" action="index.html" method="POST">
                         <fieldset class="fieldset-left">
                             <label for="destination" name="destination">Choose Your Destination
-                                <input id="destination" placeholder="Type your destination"/>
+                                <input class="form-control" id="destination" placeholder="Type your destination"/>
                             </label>
                             <div class="date-set flex">
-                                <label class="check-in-date" for="check-in-date" name="check-in-date">Check In Date
-                                    <input id="check-in-date" placeholder="Check In"/>
+                                <label class="check-in-date form-control" for="check-in-date" name="check-in-date">Check In Date
+                                    <input type="date" id="check-in-date" placeholder="Check In"/>
                                 </label>
-                                <label class="check-out-date" for="check-out-date"  name="check-out-date">Check Out Date
-                                    <input id="check-out-date" placeholder="Check Out"/>
+                                <label class="check-out-date form-control" for="check-out-date"  name="check-out-date">Check Out Date
+                                    <input type="date" id="check-out-date" placeholder="Check Out"/>
                                 </label>
                             </div>
                         </fieldset>
                         <fieldset class="fieldset-right">
                             <div class="flex">
                                 <label name="rooms">How many rooms?
-                                    <select class="rooms">
+                                    <select class="form-control rooms">
                                         <option value="one room">1 Room</option>
                                         <option value="two room">2 Room</option>
                                         <option value="three room">3 Room</option>
@@ -72,7 +72,7 @@
                                     </select>
                                 </label>
                                 <label name="adult">Adult
-                                    <select class="adult">
+                                    <select class="form-control adult">
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         <option value="three">3</option>
@@ -80,7 +80,7 @@
                                     </select>
                                 </label>
                                 <label name="children">Children
-                                    <select class="children">
+                                    <select class="form-control children">
                                         <option value="zero">0</option>
                                         <option value="one">1</option>
                                         <option value="two">2</option>
@@ -103,7 +103,7 @@
                 <input class="btn btn-primary" value="CONTINUE EXPLORE"/>
             </div>
         </section>
-        <section class="article-section ">
+        <section class="article-section" id="top-destination">
             <div class="container">
                 <div class="whole-articles">
                     <article class="article">
@@ -195,7 +195,7 @@
 
             </div>
         </section>
-        <section class="card-section">
+        <section class="card-section" id="recommended-places">
             <div class="container">
                 <div class="add-padding">
                     <div class="small-container flex ">
@@ -292,20 +292,21 @@
                 </div>
             </div>
         </section>
-        <section class="map-section">
+        <section class="map-section" id="contact-us">
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.91968403099!2d76.35140991549888!3d32.206394781148134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1613507391750!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="overlay"></div>
             </div>
             <form class="form" action="index.html" method="POST">
                 <fieldset>
                     <div class="flex combo">
-                        <input class="flex-01 extra" type="name" name="Name" placeholder="Name"/>
-                        <input class="flex-01 extra" type="email" name="Email" placeholder="Email"/>
+                        <input class="flex-01 form-control extra" type="name" name="Name" placeholder="Name"/>
+                        <input class="flex-01 form-control extra" type="email" name="Email" placeholder="Email"/>
                     </div>
-                    <input class="subject extra" type="name" name="Subject" placeholder="Subject"/>
-                    <textarea class="textarea" placeholder="Message" value="Message"></textarea>
+                    <input class="subject extra form-control" type="name" name="Subject" placeholder="Subject"/>
+                    <textarea class="textarea form-control" placeholder="Message" value="Message"></textarea>
                 </fieldset>
-                <input class="btn btn-01" value="SEND MESSAGE NOW"/>
+                <input class="btn btn-01 form-control" value="SEND MESSAGE NOW"/>
             </form>
         </section>
     </main>
