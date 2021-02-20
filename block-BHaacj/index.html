@@ -1,0 +1,321 @@
+<!-- - Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Forms | Assignment 2 </title>
+    <link rel="stylesheet" href="./assets/styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/2bbf3cce3b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+            <div class="padding-sides flex">
+                <a href="#" class="brand-logo flex justify-content">
+                    <img src="./assets/images/logo.png" alt="logo"/>
+                    <h2>JOURNEY</h2>
+                </a>
+                <nav>
+                    <ul class="flex">
+                        <li class="light-green"><a href="#">Home</a></li>
+                        <li><a href="#top-destination">Top Destinations</a></li>
+                        <li><a href="#recommended-places">Recommended Places</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+       </div>
+    </header> 
+    <main class="main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="bg-image">
+                    <div class="image-txt flex-box">
+                            <h1>LET'S BEGIN</h1>
+                            <img src="./assets/images/dots-3.png"/>
+                            <p>We assist you to choose the best.</p>
+                            <div class="round flex justify-center">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                    </div>
+                    <form class="form flex" action="index.html" method="POST">
+                        <fieldset class="fieldset-left">
+                            <label for="destination" name="destination">Choose Your Destination
+                                <input class="form-control" id="destination" placeholder="Type your destination"/>
+                            </label>
+                            <div class="date-set flex">
+                                <label class="check-in-date form-control" for="check-in-date" name="check-in-date">Check In Date
+                                    <input type="date" id="check-in-date" placeholder="Check In"/>
+                                </label>
+                                <label class="check-out-date form-control" for="check-out-date"  name="check-out-date">Check Out Date
+                                    <input type="date" id="check-out-date" placeholder="Check Out"/>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset-right">
+                            <div class="flex">
+                                <label name="rooms">How many rooms?
+                                    <select class="form-control rooms">
+                                        <option value="one room">1 Room</option>
+                                        <option value="two room">2 Room</option>
+                                        <option value="three room">3 Room</option>
+                                        <option value="four room">4 Room</option> 
+                                    </select>
+                                </label>
+                                <label name="adult">Adult
+                                    <select class="form-control adult">
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option> 
+                                    </select>
+                                </label>
+                                <label name="children">Children
+                                    <select class="form-control children">
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option> 
+                                    </select>
+                                </label>
+                            </div>
+                            <input value="CHECK AVAILABILITY" class="btn"/>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="text-section text-align-center">
+            <div class="container">
+                <h2 class="heading">YOUR <span class="brand-heading">JOURNEY</span> IS OUR PRIORITY</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam sequi maiores saepe non unde minus vel impedit ratione, nulla autem repudiandae consectetur asperiores quae possimus debitis nesciunt.</p>
+                <input class="btn btn-primary" value="CONTINUE EXPLORE"/>
+            </div>
+        </section>
+        <section class="article-section" id="top-destination">
+            <div class="container">
+                <div class="whole-articles">
+                    <article class="article">
+                        <div class="article-img article-img-1 flex">
+                            <div class="article-text-main-right flex justify-content">
+                                <div class="pagination flex justify-center">
+                                    <div class="article-box flex-box">
+                                        <i class="fas fa-chevron-circle-left"></i>
+                                    </div>
+                                    <div class="article-box flex-box left-offset">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                                <div class="article-text article-text-1">
+                                    <h2 class="article-heading">Europe's most visited places</h2>
+                                    <p class="article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro iste recusandae dolorum. Quo exercitationem hic autem sint corrupti! Commodi saepe porro modi aut at alias ullam ex, consectetur ab!
+                                    Eaque consequuntur tempore illo.</p>
+                                    <input class="btn btn-primary btn-secondary" value="CONTINUE READING"/>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article-img article-img-2 flex2">
+                            <div class="article-text-main-left flex flex-direction justify-center">
+                                <div class="pagination flex justify-center">
+                                    <div class="article-box flex-box right-offset"> 
+                                        <i class="fas fa-chevron-circle-left"></i>
+                                    </div>
+                                    <div class="article-box flex-box">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                                <div class="article-text article-text-2">
+                                    <h2 class="article-heading">Asia's most popular places</h2>
+                                    <p class="article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro iste recusandae dolorum. Quo exercitationem hic autem sint corrupti! Commodi saepe porro modi aut at alias ullam ex, consectetur ab!
+                                    Eaque consequuntur tempore illo neque.</p>
+                                    <input class="btn btn-primary btn-secondary btn-teritary" value="CONTINUE READING"/>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article-img article-img-3 flex">
+                            <div class="article-text-main-right flex justify-content">
+                                <div class="pagination flex justify-center">
+                                    <div class="article-box flex-box">
+                                        <i class="fas fa-chevron-circle-left"></i>
+                                    </div>
+                                    <div class="article-box flex-box left-offset">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </div>
+                                </div>
+                                <div class="article-text article-text-1">
+                                    <h2 class="article-heading">America's most famous places</h2>
+                                    <p class="article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro iste recusandae dolorum. Quo exercitationem hic autem sint corrupti! Commodi saepe porro modi aut at alias ullam ex, consectetur ab!
+                                    Eaque consequuntur tempore illo neque.</p>
+                                    <input class="btn btn-primary btn-secondary" value="CONTINUE READING"/>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="countries-section">
+            <div class="container flex">
+                <div class="box box-2-1">
+                    <p>NORTH AMERICA</p>
+                </div>
+                <div class="box box-2-2">
+                    <p>SOUTH AMERICA</p>
+                </div>
+                <div class="box box-2-3">
+                    <p>EUROPE</p>
+                </div>
+                <div class="box box-2-4">
+                    <p>ASIA</p>
+                </div>
+                <div class="box box-2-5">
+                    <p>AFRICA</p>
+                </div>
+                <div class="box box-2-6">
+                    <p>AUSTRALIA</p>
+                </div>
+                <div class="box box-2-7">
+                    <p>ANTARTICA</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="card-section" id="recommended-places">
+            <div class="container">
+                <div class="add-padding">
+                    <div class="small-container flex ">
+                        <div class="card-img">
+                            <img src="./assets/images/tm-img-06.jpg" alt="people at beach"/>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="article-heading article-heading-1">ASIA RESORT HOTEL</h2>
+                            <small class="small">Singapore</small>
+                            <p class="article-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur quis architecto quo nam repellat labore.
+                            </p>
+                        </div>
+                        <div class="card-price-tags">
+                            <div class="flex justify-content">
+                                <img src="./assets/images/button-curve.png"/>
+                                <div class="price-tag-text flex">
+                                    <h2 class="article-heading">$440</h2>
+                                    <p class="article-para">CONTINUE READING</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="small-container flex ">
+                        <div class="card-img">
+                            <img src="./assets/images/tm-img-07.jpg" alt="lights on bridge"/>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="article-heading article-heading-1">NULLAM EGET EST A NISL</h2>
+                            <small class="small">Yangon, Myanmar</small>
+                            <p class="article-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur quis architecto quo nam repellat labore.
+                            </p>
+                        </div>
+                        <div class="card-price-tags">
+                            <div class="flex justify-content">
+                                <img src="./assets/images/button-curve.png"/>
+                                <div class="price-tag-text flex">
+                                    <h2 class="article-heading">$450</h2>
+                                    <p class="article-para">CONTINUE READING</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="small-container flex ">
+                        <div class="card-img">
+                            <img src="./assets/images/tm-img-05.jpg" alt="lamps on bridge"/>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="article-heading article-heading-1">PROIN INTERDUM ULLAMCORPER</h2>
+                            <small class="small">Bangkok, Thailand</small>
+                            <p class="article-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur quis architecto quo nam repellat labore.
+                            </p>
+                        </div>
+                        <div class="card-price-tags">
+                            <div class="flex justify-content">
+                                <img src="./assets/images/button-curve.png"/>
+                                <div class="price-tag-text flex">
+                                    <h2 class="article-heading">$460</h2>
+                                    <p class="article-para">CONTINUE READING</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="small-container flex ">
+                        <div class="card-img">
+                            <img src="./assets/images/tm-img-04.jpg" alt="canal passing"/>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="article-heading article-heading-1">LOREM IPSUM DOLOR SIT</h2>
+                            <small class="small">Vientiane, Laos</small>
+                            <p class="article-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur quis architecto quo nam repellat labore.
+                            </p>
+                        </div>
+                        <div class="card-price-tags">
+                            <div class="flex justify-content">
+                                <img src="./assets/images/button-curve.png"/>
+                                <div class="price-tag-text flex">
+                                    <h2 class="article-heading">$470</h2>
+                                    <p class="article-para">CONTINUE READING</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <input class="btn btn-primary btn-padding" value="SHOW MORE PLACES"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map-section" id="contact-us">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.91968403099!2d76.35140991549888!3d32.206394781148134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1613507391750!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="overlay"></div>
+            </div>
+            <form class="form" action="index.html" method="POST">
+                <fieldset>
+                    <div class="flex combo">
+                        <input class="flex-01 form-control extra" type="name" name="Name" placeholder="Name"/>
+                        <input class="flex-01 form-control extra" type="email" name="Email" placeholder="Email"/>
+                    </div>
+                    <input class="subject extra form-control" type="name" name="Subject" placeholder="Subject"/>
+                    <textarea class="textarea form-control" placeholder="Message" value="Message"></textarea>
+                </fieldset>
+                <input class="btn btn-01 form-control" value="SEND MESSAGE NOW"/>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="container-section">
+                <small>Copyright &copy; 2020 Your Company. Designed by Template Mo</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
